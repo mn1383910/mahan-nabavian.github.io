@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lenovo – Header</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!-- ================= HEADER (LIKE IMAGE) ================= -->
+<header id="site-header" class="sticky-top bg-white border-bottom">
+  <nav class="container-xxl py-2">
+    <div class="d-flex align-items-center gap-3">
+
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center me-2" href="#" aria-label="Lenovo Home">
+        <span class="lenovo-logo">Lenovo</span>
+      </a>
+
+      <!-- Search -->
+      <form class="search-wrap ms-auto flex-grow-1" role="search" aria-label="Site search">
+        <div class="search-inner d-flex align-items-stretch">
+          <button class="btn btn-light border-0 px-3 d-none d-md-flex align-items-center gap-2 search-cat-btn" type="button" aria-expanded="false" aria-controls="search-cat-menu">
+            <span class="fw-medium small">All</span>
+            <i class="bi bi-chevron-down small"></i>
+          </button>
+          <ul id="search-cat-menu" class="dropdown-menu shadow-sm">
+            <li><button class="dropdown-item" type="button" data-value="All">All</button></li>
+            <li><button class="dropdown-item" type="button" data-value="Laptops">Laptops</button></li>
+            <li><button class="dropdown-item" type="button" data-value="Desktops">Desktops</button></li>
+            <li><button class="dropdown-item" type="button" data-value="Monitors">Monitors</button></li>
+            <li><button class="dropdown-item" type="button" data-value="Accessories">Accessories</button></li>
+          </ul>
+
+          <input class="form-control border-0 search-input" type="search" placeholder="What are you looking for today ?" aria-label="Search">
+          <button class="btn btn-light border-0 px-3 search-btn" type="submit" aria-label="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </form>
+
+      <!-- Right icons/text -->
+      <div class="d-flex align-items-center gap-3 ms-2">
+        <a class="util-link d-none d-lg-inline-flex" href="#"><i class="bi bi-person"></i><span class="ms-2">Sign In / Create Account</span></a>
+        <a class="util-icon" href="#" aria-label="Rewards"><i class="bi bi-gift"></i></a>
+        <a class="util-icon" href="#" aria-label="Cart"><i class="bi bi-bag"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Primary row -->
+  <div class="border-top">
+    <nav class="container-xxl d-flex gap-4 py-2 main-menu" aria-label="Primary">
+      <a class="menu-link" href="#">Artificial Intelligence</a>
+      <a class="menu-link active" href="#">Products</a>
+      <a class="menu-link" href="#">Solutions</a>
+      <a class="menu-link" href="#">Services</a>
+      <a class="menu-link" href="#">Support</a>
+      <a class="menu-link" href="#">About Lenovo</a>
+      <a class="menu-link" href="#">Deals</a>
+
+      <div class="ms-auto d-none d-md-flex gap-4 sub-switches">
+        <a class="menu-link" href="#">Business</a>
+        <a class="menu-link" href="#">Student</a>
+        <a class="menu-link" href="#">Gaming</a>
+        <a class="menu-link" href="#">Creative</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Category scroller -->
+  <div class="border-top">
+    <div class="container-xxl position-relative">
+      <button class="cat-scroll-btn prev" aria-label="Scroll left"><i class="bi bi-chevron-left"></i></button>
+      <nav id="catScroll" class="cat-scroll" aria-label="Product categories">
+        <a href="#" class="cat-link">Laptops</a>
+        <a href="#" class="cat-link">Desktops</a>
+        <a href="#" class="cat-link">Workstations</a>
+        <a href="#" class="cat-link">Accessories</a>
+        <a href="#" class="cat-link">Software</a>
+        <a href="#" class="cat-link">Monitors</a>
+        <a href="#" class="cat-link">Tablets</a>
+        <a href="#" class="cat-link">Servers &amp; Storage</a>
+        <a href="#" class="cat-link">Home &amp; Office</a>
+        <a href="#" class="cat-link">AI</a>
+        <a href="#" class="cat-link">Deals</a>
+      </nav>
+      <button class="cat-scroll-btn next" aria-label="Scroll right"><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <!-- Rewards ribbon -->
+  <div class="rewards-ribbon text-center small">
+    <span class="fw-semibold">My Lenovo Rewards!</span>
+    <span class="ms-1">Earn 3%-9% in rewards and get free expedited delivery on select products.</span>
+    <a class="ms-1 fw-semibold" href="#">Join for Free &gt;</a>
+  </div>
+</header>
+
+
+
+
+   <!-- HERO SLIDER -->
+  <section class="lv-hero" aria-label="Featured products carousel">
+    <!-- Slides -->
+    <ul class="lv-slides">
+      <!-- Slide 1 -->
+      <li class="lv-slide is-active" data-index="0">
+        <img src="images/1.avif" alt="ThinkPad X1 Carbon laptop on a desk" class="lv-slide-img" />
+        <!-- dark-to-red overlay -->
+        <div class="lv-overlay"></div>
+
+        <!-- Caption block (left) -->
+        <div class="lv-caption">
+          <h5 class="lv-kicker">Maximum performance with Windows 11</h5>
+          <h2 class="lv-title">THINKPAD X1 CARBON<br />GEN 13 KI-PC</h2>
+          <p class="lv-subtitle">Personalized experiences, unlimited possibilities</p>
+          <a href="#" class="lv-cta">Buy now</a>
+        </div>
+      </li>
+
+      <!-- Slide 2 -->
+      <li class="lv-slide" data-index="1">
+        <img src="images/2.avif" alt="Legion gaming laptop glowing" class="lv-slide-img" />
+        <div class="lv-overlay"></div>
+        <div class="lv-caption">
+          <h5 class="lv-kicker">Lenovo Legion</h5>
+          <h2 class="lv-title">PLAY WITHOUT LIMITS</h2>
+          <p class="lv-subtitle">Blazing graphics, precision cooling, pro-level control</p>
+          <a href="#" class="lv-cta">Shop Legion</a>
+        </div>
+      </li>
+
+      <!-- Slide 3 -->
+      <li class="lv-slide" data-index="2">
+        <img src="images/3.avif" alt="Smart workspace with Lenovo monitor" class="lv-slide-img" />
+        <div class="lv-overlay"></div>
+        <div class="lv-caption">
+          <h5 class="lv-kicker">Smart Workspace</h5>
+          <h2 class="lv-title">WORK. CREATE. ANYWHERE.</h2>
+          <p class="lv-subtitle">Monitors, docks, and accessories to upgrade your setup</p>
+          <a href="#" class="lv-cta">Shop accessories</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Arrows -->
+    <button class="lv-arrow lv-prev" aria-label="Previous slide">❮</button>
+    <button class="lv-arrow lv-next" aria-label="Next slide">❯</button>
+
+    <!-- Dots -->
+    <div class="lv-dots" role="tablist" aria-label="Slide selector"></div>
+
+    <!-- AI Assistant badge (decorative) -->
+    <a href="#" class="lv-ai-assistant" aria-label="AI Assistant">AI Assistant</a>
+  </section>
+</main>
+
+<!-- DISCOVER PRODUCTS -->
+<section class="lv-discover" aria-labelledby="discover-title">
+  <div class="lv-container">
+    <h2 id="discover-title">Discover products at Lenovo</h2>
+
+    <ul class="lv-discover-grid">
+      <!-- Item -->
+      <li>
+        <a href="#" class="lv-disc-item" aria-label="Sale">
+          <span class="lv-disc-badge">
+            <!-- tag icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12l9-9 9 9-9 9-9-9zm12-5a2 2 0 11-2 2 2 2 0 012-2z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span class="lv-disc-label">Sale</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="lv-disc-item" aria-label="Notebooks">
+          <span class="lv-disc-badge">
+            <svg viewBox="0 0 24 24"><path d="M3 6h18v10H3zM6 18h12" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span class="lv-disc-label">Notebooks</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="lv-disc-item" aria-label="Desktops">
+          <span class="lv-disc-badge">
+            <svg viewBox="0 0 24 24"><path d="M3 5h18v12H3zM10 21h4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span class="lv-disc-label">Desktops</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="lv-disc-item" aria-label="Workstations">
+          <span class="lv-disc-badge">
+            <svg viewBox="0 0 24 24"><path d="M3 5h9v7H3zM12 5h9v7h-9zM6 19h12" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span class="lv-disc-label">Workstations</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="lv-disc-item" aria-label="Tablets">
+          <span class="lv-disc-badge">
+            <svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="18" r="1"/></svg>
+          </span>
+          <span class="lv-disc-label">Tablets</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="lv-disc-item" aria-label="Accessories and Software">
+          <span class="lv-disc-badge">
+            <svg viewBox="0 0 24 24"><path d="M12 2v6M6 12h12M8 22h8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span class="lv-disc-label">Accessories &amp; Software</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="lv-disc-item" aria-label="Monitors">
+          <span class="lv-disc-badge">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span class="lv-disc-label">Monitors</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="lv-disc-item" aria-label="Servers and storage">
+          <span class="lv-disc-badge">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="4" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4" y="10" width="16" height="4" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4" y="16" width="16" height="4" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span class="lv-disc-label">Servers and storage</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="lv-disc-item" aria-label="Artificial intelligence">
+          <span class="lv-disc-badge">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M5 19l3-3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span class="lv-disc-label">Artificial intelligence</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="lv-offers" aria-labelledby="offers-title">
+  <div class="lv-container">
+    <h2 id="offers-title">Offers and discounts</h2>
+    <a href="#" class="lv-all-offers">All Offers</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PROMO TILES -->
+<section class="lv-tiles" aria-labelledby="tiles-title">
+  <div class="lv-container">
+    <h2 id="tiles-title" class="visually-hidden">Featured picks</h2>
+
+    <ul class="lv-tile-grid">
+      <!-- Tile 1 -->
+      <li class="lv-tile">
+        <a href="#" class="lv-tile-card">
+          <figure class="lv-tile-media">
+            <img src="images/4.webp" alt="IdeaPad Pro laptop with creative apps" loading="lazy">
+          </figure>
+          <div class="lv-tile-body">
+            <h3 class="lv-tile-title">Meet IdeaPad Pro<span class="lv-dot">.</span></h3>
+            <p class="lv-tile-desc">Create smarter &amp; faster with AI-powered performance &amp; pro-level visuals.</p>
+            <span class="lv-btn lv-btn-dark">Shop Now</span>
+          </div>
+        </a>
+      </li>
+
+      <!-- Tile 2 -->
+      <li class="lv-tile">
+        <a href="#" class="lv-tile-card">
+          <figure class="lv-tile-media">
+            <img src="images/5.webp" alt="LOQ gaming laptop with RGB setup" loading="lazy">
+          </figure>
+          <div class="lv-tile-body">
+            <h3 class="lv-tile-title">Power meets value in every LOQ<span class="lv-dot">.</span></h3>
+            <p class="lv-tile-desc">Designed for gamers who demand more without spending more.</p>
+            <span class="lv-btn lv-btn-dark">Shop Now</span>
+          </div>
+        </a>
+      </li>
+
+      <!-- Tile 3 -->
+      <li class="lv-tile">
+        <a href="#" class="lv-tile-card">
+          <figure class="lv-tile-media">
+            <img src="images/6.jpg" alt="Lenovo monitor with creative workspace" loading="lazy">
+          </figure>
+          <div class="lv-tile-body">
+            <h3 class="lv-tile-title">Next-level screen experience<span class="lv-dot">.</span></h3>
+            <p class="lv-tile-desc">A new monitor makes all the difference. Earn 2X Rewards this week.</p>
+            <span class="lv-btn lv-btn-dark">Shop Now</span>
+          </div>
+        </a>
+      </li>
+
+      <!-- Tile 4 -->
+      <li class="lv-tile">
+        <a href="#" class="lv-tile-card">
+          <figure class="lv-tile-media">
+            <img src="images/7.jpg" alt="Newest ThinkPad models" loading="lazy">
+          </figure>
+          <div class="lv-tile-body">
+            <h3 class="lv-tile-title">Meet the greatest new arrivals<span class="lv-dot">.</span></h3>
+            <p class="lv-tile-desc">Upgrade to the latest model and unlock more power than ever before.</p>
+            <span class="lv-btn lv-btn-dark">Shop Now</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- PRODUCT CARDS CAROUSEL -->
+<section class="lv-products" aria-labelledby="lv-products-title">
+  <div class="lv-container">
+    <h2 id="lv-products-title" class="lv-pro-title">Popular picks</h2>
+
+    <div class="lv-pro-wrap">
+      <!-- arrows -->
+      <button class="lv-pro-arrow lv-pro-prev" aria-label="Previous products">❮</button>
+      <button class="lv-pro-arrow lv-pro-next" aria-label="Next products">❯</button>
+
+      <!-- scroll viewport -->
+      <div class="lv-pro-viewport" tabindex="0" aria-roledescription="carousel">
+        <ul class="lv-pro-track">
+          <!-- CARD 1 -->
+          <li class="lv-pro-card">
+            <div class="lv-pro-top">
+              <span class="lv-pro-badge">AI + UPGRADED PROCESSOR</span>
+              <button class="lv-like" aria-label="Add to favorites" aria-pressed="false">♥</button>
+            </div>
+
+            <a href="#" class="lv-pro-name">
+              ThinkPad X1 Carbon Gen 13 Intel (14”) Aura Edition – Eclipse Black
+            </a>
+
+            <div class="lv-stars" data-rating="4.4" data-count="388"></div>
+
+            <figure class="lv-pro-media">
+              <img src="images/12.webp" alt="ThinkPad X1 Carbon Gen 13" loading="lazy">
+            </figure>
+
+            <div class="lv-price">$2,959.00</div>
+
+            <ul class="lv-bullets">
+              <li>14” premium Copilot+ AI PC</li>
+              <li>Aura Edition for optimal day-to-day experience</li>
+              <li>Super-lightweight — less than 1&nbsp;kg</li>
+            </ul>
+
+            <a class="lv-btn lv-btn-dark lv-btn-wide" href="#">Shop</a>
+          </li>
+
+          <!-- CARD 2 -->
+          <li class="lv-pro-card">
+            <div class="lv-pro-top">
+              <span class="lv-pro-badge violet">NEWEST MODEL</span>
+              <button class="lv-like" aria-label="Add to favorites" aria-pressed="false">♥</button>
+            </div>
+
+            <a href="#" class="lv-pro-name">Yoga 7i 2-in-1 (16” Intel)</a>
+
+            <div class="lv-stars" data-rating="4.6" data-count="119"></div>
+
+            <figure class="lv-pro-media">
+              <img src="images/11.avif" alt="Yoga 7i 2-in-1" loading="lazy">
+            </figure>
+
+            <div class="lv-price">$1,279.99</div>
+
+            <ul class="lv-bullets">
+              <li>Powered by Intel® Core™ Ultra processors</li>
+              <li>Vibrant 16” touchscreen display</li>
+              <li>Flexible 360° design for creativity on the go</li>
+            </ul>
+
+            <a class="lv-btn lv-btn-dark lv-btn-wide" href="#">Shop</a>
+          </li>
+
+          <!-- CARD 3 -->
+          <li class="lv-pro-card">
+            <div class="lv-pro-top">
+              <span class="lv-pro-badge gray">COMPACT DESKTOP</span>
+              <button class="lv-like" aria-label="Add to favorites" aria-pressed="false">♥</button>
+            </div>
+
+            <a href="#" class="lv-pro-name">ThinkCentre Neo 50q Gen 5 Tiny (Intel)</a>
+
+            <div class="lv-stars" data-rating="4.5" data-count="5"></div>
+
+            <figure class="lv-pro-media">
+              <img src="images/8.avif" alt="Neo 50q Tiny" loading="lazy">
+            </figure>
+
+            <div class="lv-price">$689.00</div>
+
+            <ul class="lv-bullets">
+              <li>1L Tiny PC with Intel® Core™ power</li>
+              <li>ICE 7.0 for efficient performance</li>
+              <li>Ample connectivity for multitasking</li>
+            </ul>
+
+            <a class="lv-btn lv-btn-dark lv-btn-wide" href="#">Shop</a>
+          </li>
+
+          <!-- CARD 4 -->
+          <li class="lv-pro-card">
+            <div class="lv-pro-top">
+              <span class="lv-pro-badge">MOBILE WORKSTATION</span>
+              <button class="lv-like" aria-label="Add to favorites" aria-pressed="false">♥</button>
+            </div>
+
+            <a href="#" class="lv-pro-name">ThinkPad P16s Gen 3 Intel (16”)</a>
+
+            <div class="lv-stars" data-rating="4.6" data-count="322"></div>
+
+            <figure class="lv-pro-media">
+              <img src="images/10.webp" alt="ThinkPad P16s" loading="lazy">
+            </figure>
+
+            <div class="lv-price">$1,899.00</div>
+
+            <ul class="lv-bullets">
+              <li>AI-fueled productivity with Intel® Core™ Ultra</li>
+              <li>16” vivid display & improved efficiency</li>
+              <li>Ideal for architects & engineers</li>
+            </ul>
+
+            <a class="lv-btn lv-btn-dark lv-btn-wide" href="#">Shop</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- WIDE PROMO BANNERS -->
+<section class="lv-wide-promos" aria-labelledby="lv-wide-title">
+  <div class="lv-container">
+    <h2 id="lv-wide-title" class="visually-hidden">Lenovo programs</h2>
+
+    <ul class="lv-wide-grid">
+      <!-- Card 1 -->
+      <li class="lv-wide-card">
+        <a href="#" class="lv-wide-link" aria-label="Lenovo Pro for Business">
+          <figure class="lv-wide-media">
+            <img src="images/14.avif" alt="Team collaborating around a laptop" loading="lazy">
+            <span class="lv-wide-arrow" aria-hidden="true">›</span>
+          </figure>
+          <div class="lv-wide-body">
+            <h3 class="lv-wide-title">Lenovo Pro for Business</h3>
+            <p class="lv-wide-desc">
+              Always save more, guaranteed! Free membership, exclusive perks &amp; 1:1 tech support.
+              Save an extra $100 off first order of $1000+.
+            </p>
+            <span class="lv-btn lv-btn-light">Join for Free</span>
+          </div>
+        </a>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="lv-wide-card">
+        <a href="#" class="lv-wide-link" aria-label="Sign Up for Lenovo Live Events">
+          <figure class="lv-wide-media">
+            <img src="images/15.webp" alt="People at an interactive product event" loading="lazy">
+            <span class="lv-wide-arrow" aria-hidden="true">›</span>
+          </figure>
+          <div class="lv-wide-body">
+            <h3 class="lv-wide-title">Sign Up for Lenovo Live Events</h3>
+            <p class="lv-wide-desc">
+              Join Lenovo pros for exclusive product showcases and site tours—live and interactive.
+            </p>
+            <span class="lv-btn lv-btn-light">Sign Up</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- ACCESSORY ESSENTIALS -->
+<section class="lv-accessories" aria-labelledby="acc-title">
+  <div class="lv-container">
+    <div class="lv-acc-head">
+      <h2 id="acc-title">Accessory Essentials</h2>
+      <a class="lv-acc-link" href="#">Explore our entire collection</a>
+    </div>
+
+    <ul class="lv-acc-grid">
+      <!-- Card 1 -->
+      <li class="acc-card">
+        <div class="acc-top">
+          <span class="acc-ship">READY TO SHIP</span>
+          <button class="acc-like" aria-label="Add to favorites" aria-pressed="false">♡</button>
+        </div>
+
+        <a href="#" class="acc-name">
+          Mobile Pixels Glance Pro 15.6 inch LCD
+        </a>
+
+        <div class="acc-stars" data-rating="3.9" data-count="4578"></div>
+
+        <!-- image carousel (can hold multiple) -->
+        <figure class="acc-media" data-index="0">
+          <button class="acc-img-nav prev" aria-label="Previous image">‹</button>
+          <img src="images/16.webp" alt="Glance Pro portable monitor">
+          <!-- add more <img> for additional angles if you have them -->
+          <button class="acc-img-nav next" aria-label="Next image">›</button>
+        </figure>
+
+        <div class="acc-price" data-price="382.49" data-compare="449.99">
+          <div class="acc-est">
+            <span>Est Value</span>
+            <del>$449.99</del>
+            <span class="acc-off">15% off</span>
+          </div>
+          <div class="acc-now">$382.49</div>
+        </div>
+
+        <a class="lv-btn lv-btn-dark lv-btn-wide" href="#">Shop</a>
+      </li>
+
+      <!-- Card 2 -->
+      <li class="acc-card">
+        <div class="acc-top">
+          <span class="acc-ship">READY TO SHIP</span>
+          <button class="acc-like" aria-label="Add to favorites" aria-pressed="false">♡</button>
+        </div>
+
+        <a href="#" class="acc-name">Lenovo H110 Gaming Headset</a>
+        <div class="acc-stars" data-rating="4.0" data-count="13"></div>
+
+        <figure class="acc-media" data-index="0">
+          <button class="acc-img-nav prev" aria-label="Previous image">‹</button>
+          <img src="images/17.avif" alt="Lenovo H110 Gaming Headset">
+          <button class="acc-img-nav next" aria-label="Next image">›</button>
+        </figure>
+
+        <div class="acc-price" data-price="23.99" data-compare="29.99">
+          <div class="acc-est">
+            <span>Est Value</span>
+            <del>$29.99</del>
+            <span class="acc-off">20% off</span>
+          </div>
+          <div class="acc-now">$23.99</div>
+        </div>
+
+        <a class="lv-btn lv-btn-dark lv-btn-wide" href="#">Shop</a>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="acc-card">
+        <div class="acc-top">
+          <button class="acc-like" aria-label="Add to favorites" aria-pressed="false">♡</button>
+        </div>
+
+        <a href="#" class="acc-name">
+          Ultimate Ears WONDERBOOM 4 Portable Wireless Speaker – Black
+        </a>
+        <div class="acc-stars" data-rating="4.7" data-count="49"></div>
+
+        <figure class="acc-media" data-index="0">
+          <button class="acc-img-nav prev" aria-label="Previous image">‹</button>
+          <img src="images/18.avif" alt="Wonderboom 4 portable speaker">
+          <button class="acc-img-nav next" aria-label="Next image">›</button>
+        </figure>
+
+        <div class="acc-price" data-price="79.99" data-compare="99.99">
+          <div class="acc-est">
+            <span>Est Value</span>
+            <del>$99.99</del>
+            <span class="acc-off">20% off</span>
+          </div>
+          <div class="acc-now">$79.99</div>
+        </div>
+
+        <a class="lv-btn lv-btn-dark lv-btn-wide" href="#">Shop</a>
+      </li>
+
+      <!-- Card 4 -->
+      <li class="acc-card">
+        <div class="acc-top">
+          <span class="acc-ship">READY TO SHIP</span>
+          <button class="acc-like" aria-label="Add to favorites" aria-pressed="false">♡</button>
+        </div>
+
+        <a href="#" class="acc-name">Lenovo Professional Wireless Keyboard – US English</a>
+        <div class="acc-stars" data-rating="4.4" data-count="278"></div>
+
+        <figure class="acc-media" data-index="0">
+          <button class="acc-img-nav prev" aria-label="Previous image">‹</button>
+          <img src="images/19.avif" alt="Lenovo Professional Wireless Keyboard">
+          <button class="acc-img-nav next" aria-label="Next image">›</button>
+        </figure>
+
+        <div class="acc-price" data-price="29.99" data-compare="46.99">
+          <div class="acc-est">
+            <span>Est Value</span>
+            <del>$46.99</del>
+            <span class="acc-off">36% off</span>
+          </div>
+          <div class="acc-now">$29.99</div>
+        </div>
+
+        <a class="lv-btn lv-btn-dark lv-btn-wide" href="#">Shop</a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- REWARDS & OUTLET -->
+<section class="lv-wide-promos" aria-labelledby="rewards-outlet-title">
+  <div class="lv-container">
+    <h2 id="rewards-outlet-title" class="visually-hidden">Rewards and Outlet</h2>
+
+    <ul class="lv-wide-grid">
+      <!-- My Lenovo Rewards -->
+      <li class="lv-wide-card">
+        <a href="#" class="lv-wide-link" aria-label="My Lenovo Rewards">
+          <figure class="lv-wide-media">
+            <img src="images/20.avif" alt="Friends smiling with gifts and a Lenovo laptop" loading="lazy">
+            <!-- no arrow on this one per screenshot -->
+          </figure>
+          <div class="lv-wide-body">
+            <h3 class="lv-wide-title">My Lenovo Rewards</h3>
+            <p class="lv-wide-desc">
+              Earn rewards to use on future purchases at Lenovo. Plus, get Free Expedited Delivery on most orders!
+            </p>
+            <span class="lv-btn lv-btn-light">Join For Free</span>
+          </div>
+        </a>
+      </li>
+
+      <!-- Lenovo Outlet Store -->
+      <li class="lv-wide-card">
+        <a href="#" class="lv-wide-link" aria-label="Lenovo Outlet Store">
+          <figure class="lv-wide-media">
+            <img src="images/21.avif" alt="Lenovo laptops in an outlet store flat lay" loading="lazy">
+            <span class="lv-wide-arrow" aria-hidden="true">›</span>
+          </figure>
+          <div class="lv-wide-body">
+            <h3 class="lv-wide-title">Lenovo Outlet Store</h3>
+            <p class="lv-wide-desc">
+              Explore our trusted New &amp; Lenovo Certified Refurbished devices.
+            </p>
+            <span class="lv-btn lv-btn-light">Shop Now</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- LEGAL / IMPORTANT INFO -->
+<section class="lv-legal" aria-labelledby="lv-legal-title">
+  <div class="lv-container">
+    <h2 id="lv-legal-title">PC Laptops, PC Desktop &amp; best laptop computers</h2>
+
+    <p class="lv-legal-intro">
+      In a world fueled by digital connectivity, choosing the right computer matters. Whether you’re
+      creating, gaming, studying, or running a business, a reliable PC keeps you moving. At Lenovo,
+      you’ll find laptops and desktops for every workflow—from ultraportables and 2-in-1s to
+      towers, tiny PCs, and workstations.
+    </p>
+
+    <!-- Collapsible body -->
+    <div class="lv-legal-body" id="legal-body" aria-hidden="true">
+      <h4>Important information</h4>
+      <p><strong>Consumers only:</strong> Lenovo.com sells and ships products to end-users. Orders may be cancelled if we believe items are intended for resale.</p>
+
+      <p><strong>Limits:</strong> 5 units per customer unless otherwise noted. Offers vary by country/region and may change or end without notice.</p>
+
+      <p><strong>Ship dates:</strong> Dates shown are estimates based on production time and availability and can vary by shipping method. Delays may occur due to credit approval, weather, carrier issues, or supply constraints.</p>
+
+      <p><strong>Same-day shipping:</strong> Available on select items placed before 3pm ET on business days (excludes weekends/holidays) with approved payment. Separate shipments may apply for software and accessories.</p>
+
+      <p><strong>Availability:</strong> Prices, specs, and inventory are subject to change. We may cancel all or part of an order if a product is unavailable or if a pricing/typographical error is identified.</p>
+
+      <p><strong>General:</strong> Review key information from Microsoft that may apply to your system purchase, including details on Windows versions and potential upgrades/downgrades.</p>
+
+      <p><strong>Trademarks:</strong> IdeaPad, Lenovo, Lenovo Legion, ThinkPad, ThinkCentre, ThinkStation, Yoga, the Lenovo logo, and Lenovo Legion logo are trademarks of Lenovo. Intel, Intel Core, Xeon and related marks are trademarks of Intel Corporation. Other company and product names are the property of their respective owners.</p>
+
+      <p><strong>Warranty:</strong> For written warranty terms, contact Lenovo Warranty, 1009 Think Place, Morrisville, NC, 27560. Warranty provides repair or replacement for Lenovo-branded hardware purchased for your own use and does not cover third-party products or services.</p>
+
+      <p><strong>Battery:</strong> Battery life varies by configuration, usage, and other factors. Systems with certain upgrades or components may not support all power features.</p>
+
+      <p><strong>Pricing:</strong> Prices exclude tax, shipping, and handling unless stated. Savings are calculated from Lenovo’s everyday web prices and may vary by model and configuration.</p>
+    </div>
+    <main class="container-xxl py-5">
+  <p class="text-muted">Scroll down to see the footer…</p>
+  <div style="height:40vh"></div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer pt-4 pb-5 border-top">
+  <div class="container-xxl">
+
+    <!-- Newsletter + Social + Country -->
+    <div class="row g-3 align-items-start newsletter-row">
+      <div class="col-12 col-lg-6">
+        <form class="d-flex gap-2" aria-label="Subscribe for marketing emails">
+          <input type="email" class="form-control" placeholder="Enter email to receive Lenovo marketing and promotional emails." aria-label="Email">
+          <button class="btn btn-dark px-3" type="submit" aria-label="Submit email">
+            <i class="bi bi-arrow-right-short fs-5"></i>
+          </button>
+        </form>
+        <div class="small mt-2 text-secondary">
+          Review our <a href="#" class="link-underline">Privacy Statement</a> for more details.
+        </div>
+        <div class="d-flex gap-2 mt-3">
+          <a class="btn btn-outline-secondary btn-sm" href="#"><i class="bi bi-google-play"></i> Google Play</a>
+          <a class="btn btn-outline-secondary btn-sm" href="#"><i class="bi bi-apple"></i> App Store</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6 d-flex flex-lg-row flex-column align-items-lg-end align-items-start gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <a class="social" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a class="social" href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          <a class="social" href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a class="social" href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          <a class="social" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a class="social" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+
+        <div class="ms-lg-4">
+          <label for="country" class="form-label small mb-1">Select Country / Region:</label>
+          <select id="country" class="form-select form-select-sm" style="min-width: 220px;">
+            <option selected>UNITED STATES</option>
+            <option>United Kingdom</option>
+            <option>Germany</option>
+            <option>France</option>
+            <option>India</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+    <!-- Footer columns -->
+    <div class="row gy-4">
+      <div class="col-6 col-md-4 col-xl-2">
+        <h6 class="fw-semibold">About Lenovo</h6>
+        <ul class="list-unstyled footer-list">
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Investors Relations</a></li>
+          <li><a href="#">Compliance</a></li>
+          <li><a href="#">ESG</a></li>
+          <li><a href="#">Product Recycling</a></li>
+          <li><a href="#">Product Recalls</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-4 col-xl-2">
+        <h6 class="fw-semibold">Products & Services</h6>
+        <ul class="list-unstyled footer-list">
+          <li><a href="#">Laptops & Ultrabooks</a></li>
+          <li><a href="#">Desktop Computers</a></li>
+          <li><a href="#">Workstations</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">Servers, Storage, & Networking</a></li>
+          <li><a href="#">Accessories & Software</a></li>
+          <li><a href="#">Services & Warranty</a></li>
+          <li><a href="#">Outlet</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-4 col-xl-2">
+        <h6 class="fw-semibold">Shop By Industry</h6>
+        <ul class="list-unstyled footer-list">
+          <li><a href="#">Small Business Solutions</a></li>
+          <li><a href="#">Large Enterprise Solutions</a></li>
+          <li><a href="#">Government Solutions</a></li>
+          <li><a href="#">Healthcare Solutions</a></li>
+          <li><a href="#">Higher Education Solutions</a></li>
+          <li><a href="#">Education Discounts</a></li>
+          <li><a href="#">Discount Programs</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-4 col-xl-3">
+        <h6 class="fw-semibold">Resources</h6>
+        <ul class="list-unstyled footer-list">
+          <li><a href="#">Legion Gaming Community</a></li>
+          <li><a href="#">Lenovo Creator Community</a></li>
+          <li><a href="#">Lenovo Pro Community</a></li>
+          <li><a href="#">Lenovo Pro for Business</a></li>
+          <li><a href="#">My Lenovo Rewards</a></li>
+          <li><a href="#">Customer Discounts</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="#">Knowledgebase</a></li>
+          <li><a href="#">Server Buying Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-8 col-xl-3">
+        <h6 class="fw-semibold">Customer Support</h6>
+        <ul class="list-unstyled footer-list two-col">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Policy FAQs</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Shipping Information</a></li>
+          <li><a href="#">Order Lookup</a></li>
+          <li><a href="#">Register a Product</a></li>
+          <li><a href="#">Replacement Parts</a></li>
+          <li><a href="#">Technical Support</a></li>
+          <li><a href="#">Forums</a></li>
+          <li><a href="#">Provide Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+    <!-- Legal row -->
+    <div class="d-flex flex-column flex-md-row gap-2 justify-content-between small text-secondary">
+      <div>© 2025 Lenovo. All rights reserved.</div>
+      <div class="d-flex flex-wrap gap-3">
+        <a href="#">Privacy</a>
+        <a href="#">Cookie Consent Tool</a>
+        <a href="#">Do Not Sell or Share My Personal Information</a>
+        <a href="#">U.S. Privacy Notice</a>
+        <a href="#">Site Map</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">External Submission Policy</a>
+        <a href="#">Sales terms and conditions</a>
+        <a href="#">Anti-Slavery and Human Trafficking Statement</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom helper bar (like screenshot) -->
+  <div class="footer-rail border-top py-2">
+    <div class="container-xxl d-flex justify-content-between align-items-center">
+      <a href="#" class="small d-flex align-items-center gap-2 text-decoration-none">
+        <i class="bi bi-emoji-smile"></i> Feedback
+      </a>
+      <div class="d-flex align-items-center gap-3">
+        <span class="small text-secondary">Need Help? Call: <a href="tel:+18552536886" class="text-decoration-none">1-855-253-6886</a></span>
+        <a href="#" class="btn btn-primary btn-sm"><i class="bi bi-chat-dots me-1"></i> Chat Now</a>
+        <button class="btn btn-outline-secondary btn-sm rounded-circle" id="backToTop" aria-label="Back to top">
+          <i class="bi bi-chevron-up"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+ 
+
+  <script src="main.js"></script>
+</body>
+</html>
